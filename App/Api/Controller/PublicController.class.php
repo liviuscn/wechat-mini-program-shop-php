@@ -9,7 +9,7 @@ class PublicController extends Controller {
 	    //php 判断http还是https
     	$http_type = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')) ? 'https://' : 'http://'; 
     	//所有图片路径
-	    define(__DATAURL__, $http_type.$_SERVER['SERVER_NAME'].':8009'.__DATA__.'/');
+	    define(__DATAURL__, $http_type.$_SERVER['SERVER_NAME'].':1001'.__DATA__.'/');
 	    define(__PUBLICURL__, $http_type.$_SERVER['SERVER_NAME'].__PUBLIC__.'/');
 	    define(__HTTP__, $http_type);
     }
