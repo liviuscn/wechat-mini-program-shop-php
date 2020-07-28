@@ -6,7 +6,6 @@ class IndexController extends PublicController {
 	//  首页数据接口
 	//***************************
     public function index(){
-
     	//如果缓存首页没有数据，那么就读取数据库
     	/***********获取首页顶部轮播图************/
     	$ggtop=M('guanggao')->order('sort desc,id asc')->field('id,name,photo')->limit(10)->select();

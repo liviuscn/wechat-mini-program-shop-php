@@ -381,6 +381,7 @@ class PaymentController extends PublicController {
 			$data['product_num']=$num;
 			$data['remark']=$_REQUEST['remark'];
 			$data['order_sn']=$this->build_order_no();//生成唯一订单号
+
 			$result = $order->add($data);
 		    if($result){
 	            //$prid = explode(",", $_POST['ids']);
